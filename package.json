@@ -1,0 +1,28 @@
+{
+  "name": "nicolasburger.fr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "node-sass ./sass/general.scss ./css/main.css",
+    "watch": "nodemon -e scss -x \"npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burgerni10/nicolasburger.fr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burgerni10/nicolasburger.fr/issues"
+  },
+  "homepage": "https://github.com/burgerni10/nicolasburger.fr#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.3"
+  }
+}

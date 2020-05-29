@@ -1,0 +1,143 @@
+@import 'colors';
+@import 'nav';
+@import 'footer';
+@import 'index';
+@import 'pro';
+@import '404';
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12pt;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: $secondary;
+  min-height: 100%;
+  position: relative;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.vert-align {
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  line-height: 1.5em;
+}
+strong {
+  font-weight: 500;
+}
+
+// MARGIN
+@for $i from 1 through 20 {
+  .marg-top-#{$i}0 {
+    margin-top: $i * 10px;
+  }
+}
+@for $i from 1 through 20 {
+  .marg-bot-#{$i}0 {
+    margin-bottom: $i * 10px;
+  }
+}
+@for $i from 1 through 20 {
+  .marg-right-#{$i}0 {
+    margin-right: $i * 10px;
+  }
+}
+@for $i from 1 through 20 {
+  .marg-left-#{$i}0 {
+    margin-left: $i * 10px;
+  }
+}
+
+// FONT
+@for $i from 1 through 20 {
+  .font-s-#{$i} {
+    font-size: $i * 0.1em;
+  }
+}
+@for $i from 1 through 9 {
+  .font-w-#{$i}00 {
+    font-weight: $i * 100;
+  }
+}
+
+.pad-xsm {
+  padding: 4px 6px;
+}
+.pad-sm {
+  padding: 6px;
+}
+.pad-md {
+  padding: 7px 10px;
+}
+.pad-lg {
+  padding: 10px 15px;
+}
+.pad-xl {
+  padding: 17px 20px;
+}
+
+.boxed-white {
+  border: solid 1px white;
+}
+
+.img-fit-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-fit-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

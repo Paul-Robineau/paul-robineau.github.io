@@ -1,0 +1,54 @@
+.main-footer {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12pt;
+  width: 100%;
+  height: 144px;
+  background-color: $primary;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  color: $ternary;
+  z-index: 100;
+  a {
+    color: $aref_color;
+  }
+  ul {
+    list-style: none;
+  }
+  .language {
+    width: 20%;
+    ul {
+      padding-top: 5px;
+      display: flex;
+      img {
+        cursor: pointer;
+        margin: auto;
+        height: 15px;
+        width: 40px;
+      }
+    }
+    p {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      margin: 10px;
+    }
+  }
+  .footer-nav {
+    width: 40%;
+  }
+  .contact {
+    width: 40%;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-footer {
+    width: 100%;
+    .language {
+      ul {
+        display: block;
+      }
+    }
+  }
+}
