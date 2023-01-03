@@ -41,7 +41,7 @@
       background-color: #b2becb; }
     .top-bar .logo a {
       padding-left: 15px;
-      color: whitesmoke; }
+      color: white; }
   .top-bar .nav-container {
     position: relative;
     float: right;
@@ -56,7 +56,7 @@
       list-style: none;
       font-size: 1.25em; }
       .top-bar .nav-container .menu li a {
-        color: whitesmoke; }
+        color: white; }
       .top-bar .nav-container .menu .visible {
         display: initial; }
     .top-bar .nav-container .menu-btn {
@@ -120,7 +120,7 @@
         position: absolute;
         top: 30px;
         width: 100%;
-        background-color: whitesmoke; }
+        background-color: white; }
         .top-bar .nav-container .menu-btn:checked ~ .menu li {
           text-align: right;
           border-bottom: 1px solid #35557b;
@@ -157,7 +157,7 @@
   color: #9fadbe;
   z-index: 100; }
   .main-footer a {
-    color: whitesmoke; }
+    color: white; }
   .main-footer ul {
     list-style: none; }
   .main-footer .language {
@@ -209,7 +209,7 @@
       padding-top: 3px;
       padding-bottom: 3px;
       width: auto;
-      color: whitesmoke;
+      color: white;
       background-color: #35557b; }
     .main-container-index .resume a:hover {
       background-color: #c9d1db; }
@@ -328,7 +328,7 @@
 
 @media (max-width: 900px) {
   .main-container .project-list {
-    width: 100%; }
+    width: 90%; margin:auto }
     .main-container .project-list .project {
       display: unset;
       width: 100%; }
@@ -347,7 +347,7 @@
           top: 0px;
           text-align: center; }
         .main-container .project-list .project .description .desc-content {
-          margin-top: 130px; }
+          margin-top: 40px; }
   .main-container .legals {
     width: 100%; }
     .main-container .legals .project {
@@ -382,7 +382,7 @@ body {
   font-size: 12pt;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: #c9d1db;
+  background-color: white;
   min-height: 100%;
   position: relative; }
 
@@ -781,3 +781,14 @@ strong {
   width: 100%;
   height: 100%;
   object-fit: contain; }
+
+.img-illu {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:50% ;
+  text-align:center; }
+
+@media (max-width: 900px) {
+  .img-illu { width:100% }
+}
