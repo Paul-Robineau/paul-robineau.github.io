@@ -23,6 +23,6 @@
   "homepage": "https://github.com/burgerni10/nicolasburger.fr#readme",
   "devDependencies": {
     "node-sass": "^4.12.0",
-    "nodemon": "^1.19.3"
+    "nodemon": "^3.0.2"
   }
 }
