@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; base-uri 'self'; form-action 'none'" />
+
+  <title>PhD Thesis | Quantum Dots Micropatterning &amp; NEF Imaging | Paul Robineau</title>
+  <meta name="description"
+    content="Paul Robineau's PhD: 2D micropatterning of quantum dots for biofunctionalization and Non-radiative Excitation Fluorescence (NEF) nano-imaging of cell adhesion." />
+  <meta name="author" content="Paul Robineau" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="PhD Thesis | Quantum Dots Micropatterning &amp; NEF Imaging | Paul Robineau" />
+  <meta property="og:description"
+    content="Paul Robineau's PhD: 2D micropatterning of quantum dots for biofunctionalization and Non-radiative Excitation Fluorescence (NEF) nano-imaging of cell adhesion." />
+  <meta property="og:image" content="https://paul-robineau.github.io/img/academic/nef-fcs.png" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2f5277" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f161d" />
+
+  <link rel="icon" href="img/common/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="img/common/pr.png" sizes="any" type="image/png" />
+  <link rel="apple-touch-icon" href="img/common/apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="theme.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="index.html">Paul Robineau</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="phd.html" aria-current="page">PhD Thesis</a></li>
+        <li><a href="academic.html">Academic</a></li>
+        <li><a href="associative.html">Associative</a></li>
+        <li><a href="blog/">Blog</a></li>
+      </ul>
+        <button id="theme-toggle" class="theme-toggle" type="button" hidden aria-label="Switch colour theme">
+          <svg class="ti ti--auto" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 0 0 18Z"/></svg>
+          <svg class="ti ti--light" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM4 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2h1Zm17 0a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1ZM5.64 5.64a1 1 0 0 1 1.42 0l.7.71A1 1 0 0 1 6.34 7.76l-.7-.7a1 1 0 0 1 0-1.42Zm10.6 10.6a1 1 0 0 1 1.42 0l.7.7a1 1 0 0 1-1.42 1.42l-.7-.71a1 1 0 0 1 0-1.41ZM18.36 5.64a1 1 0 0 1 0 1.42l-.7.7a1 1 0 1 1-1.42-1.42l.7-.7a1 1 0 0 1 1.42 0ZM7.76 16.24a1 1 0 0 1 0 1.42l-.71.7a1 1 0 0 1-1.41-1.42l.7-.7a1 1 0 0 1 1.42 0Z"/></svg>
+          <svg class="ti ti--dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.5A9 9 0 0 1 9.5 3 9 9 0 1 0 21 14.5Z"/></svg>
+        </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="wrap section">
+      <p class="eyebrow">PhD Thesis · Nanobiophotonics</p>
+      <h1>Quantum Dots 2D Micropatterning:<br />Biofunctionalization &amp; NEF imaging</h1>
+      <p class="section-intro" style="margin-top:1rem;">
+        Full text of the manuscript (French) is available on
+        <a href="https://www.theses.fr/2022TROY0039" target="_blank" rel="noopener noreferrer">theses.fr</a>
+        and on <a href="https://hal.science/tel-04280646v1" target="_blank" rel="noopener noreferrer">HAL</a>.
+      </p>
+
+      <div class="entry entry--media entry--introphd">
+        <div class="entry__body lead-block">
+          <p>
+            Optical imaging is an important field of research in the life sciences, especially in cell biology.
+            The characteristic sizes of the phenomena involved are very diverse: mammalian cell sizes typically
+            range from 1 to 100 µm in diameter, whereas protein sizes are closer to the nm. Thus,
+            one of the important challenges of contemporary imaging in cell biology is to access information
+            related to phenomena of nanometric dimensions, while maintaining an overview of the cells and thus a
+            wide field of observation.
+          </p>
+          <p>
+            In the case of cell adhesion and migration, the fine understanding of these bio-physical-chemical
+            phenomena requires tools that account for the articulation between protein interactions and
+            the global behavior of the cell, which emphasizes the dynamic aspects of adhesion. However, the
+            techniques currently used allow the study of one or several aspects of the phenomenon, but at the cost
+            of sometimes very important compromises. For example, with classical optical microscopy, such as phase
+            contrast, access to global behaviors is allowed thanks to the large field of observation and high
+            acquisition speed, but the precise study of adhesion zones is impossible because of the limit of
+            resolution due to diffraction (∼250 nm in the visible). In contrast, modern methods beyond the
+            diffraction limit are limited in terms of field of view, accessible temporal dynamics, and, more
+            crucially, are generally incompatible with the study of living cells due to the high excitation
+            irradiances used.
+          </p>
+          <p>
+            Non-radiative Excitation Fluorescence (NEF) imaging is a proposed technique within the family of
+            optical methods used to study cell adhesion, which aims to overcome the diffraction limit. Based on
+            the phenomenon of non-radiative energy transfer of the Förster type (FRET), NEF imaging aims to give
+            access to the spatio-temporal dynamics of adhesion focal points of living cells. This technique is
+            based on the use of glass surfaces made "optically active" via their functionalization by quantum dots
+            (QDs). The latter play the role of donors in the context of FRET – Figure 0.1. This short-range
+            transfer phenomenon – a few nm – then allows the detection of fluorescent molecules when they are in
+            close proximity to the substrate – Figure 0.2. In previous works, the Nanobiophotonics team at the L2n
+            lab had demonstrated the possibility of measuring the height of a lipid membrane with a nanometric
+            axial resolution, for low acquisition times and minimal laser power – Figure 0.3.
+          </p>
+          <p>
+            Along with these challenges, the diversity of cell adhesion behaviors on a 2D substrate - even within
+            the same cell line - has led to the development of surfaces to control adhesion, such as
+            micropatterning. The idea is to reproduce the geometrical and mechanical constraints, as well as the
+            composition of the extracellular matrix, by microstructuring the distribution of adhesion proteins on
+            the surface of more or less rigid substrates – Figure 0.4.
+          </p>
+        </div>
+        <div class="entry__media">
+          <div class="figstack">
+            <figure>
+              <img src="img/phd/FRET-NEF-Principle-ENG.png" loading="lazy" alt="Illustration of the excitation part of a NEF imaging setup, with QDs embedded in PMMA" />
+              <figcaption>
+                Figure 0.1: Illustration of the excitation part of NEF imaging setup principle, with QDs embedded in PMMA.
+                <a href="https://doi.org/10.1021/jz100917u" target="_blank" rel="noopener noreferrer">Winckler et al. (2010), J. Phys. Chem. Lett. 1.16</a>.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/phd/FRET-NEF-Example.png" loading="lazy" alt="Superposition of a DIC image of an MCF-7 cell and the FRET signal indicating focal adhesions" />
+              <figcaption>
+                Figure 0.2: Superposition of DIC image of MCF-7 cell and FRET signal indicating focal adhesions. Scale bar: 10 µm.
+                <a href="https://doi.org/10.1021/jz100917u" target="_blank" rel="noopener noreferrer">Winckler et al. (2010), J. Phys. Chem. Lett. 1.16</a>.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/phd/NEF-lipidic-bilayers.png" loading="lazy" alt="NEF acquisitions and height cartography of substrate – lipid membranes" />
+              <figcaption>
+                Figure 0.3: NEF acquisitions and height cartography of substrate - lipid membranes.
+                <a href="https://doi.org/10.1021/acsphotonics.8b00063" target="_blank" rel="noopener noreferrer">Riachy et al. (2018), ACS Photonics 5.6</a>.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/phd/Micropatterning-InVivo-InVitro-ENG.png" loading="lazy" alt="The cell microenvironment in situ and in vitro; micropatterning to mimic physiological environments" />
+              <figcaption>
+                Figure 0.4: The cell microenvironment in situ and in vitro. Micropatterning to mimic physiological environments.
+                <a href="https://doi.org/10.1242/jcs.075150" target="_blank" rel="noopener noreferrer">Théry (2010), J. Cell. Sci. 123.24</a>.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <p class="lead-block" style="max-width:none;margin-top:1.5rem">
+        The aim of this thesis was then to further develop NEF imaging with respect to these requirements.
+        Starting from the mastery of the synthesis and surface ligand exchange of quantum dots, I developed a
+        2D microstructuring method for the QDs, combining a bottom-up covalent functionalization and a top-down
+        microstructuration by photolithography in the near UV. The microstructuration step, using a digital
+        micromirror device (DMD), makes it possible to obtain dense QD monolayers whose shape can be easily
+        controlled, with a micrometric resolution. I then showed the possibility of biofunctionalizing these
+        motifs specifically with a zinc-chelating ligand on the surface of the QDs. This RGD-terminated ligand
+        enables specific adhesion of cells to the QD micropatterns. In addition to demonstrating FRET between
+        cells and our substrates, I also explored combining NEF imaging with a super-resolution method, based on
+        fluctuating FRET acceptor emission, to increase lateral resolution.
+      </p>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap">
+        <h2>PhD overview</h2>
+        <nav class="toc" aria-label="Sections of this page">
+          <span class="toc__label">On this page</span>
+          <ol>
+            <li><a href="#phd-1">FRET &amp; TIRF</a></li>
+            <li><a href="#phd-2">Quantum dots</a></li>
+            <li><a href="#phd-3">Micropatterning</a></li>
+            <li><a href="#phd-4">FRET demo</a></li>
+            <li><a href="#phd-5">Living cells</a></li>
+          </ol>
+        </nav>
+
+        <article class="entry entry--media">
+          <div class="entry__body">
+            <h3 id="phd-1">1 · FRET and the TIRF optical setup</h3>
+            <p>
+              When 2 emitting molecules form a donor-acceptor pair, which are brought together under the right
+              conditions, FRET (Förster Resonance Energy Transfer) is obtained – Figure 1.1. This can be understood
+              as the opening of a non-radiative excitation pathway for the donor, combined with the opening of
+              a non-radiative excitation pathway for the acceptor. It is not a process of absorption of a
+              fluorescence photon from the donor by the acceptor, giving rise to a secondary emission: it is a
+              dipole-dipole coupling, directly between the molecules.
+            </p>
+            <p>
+              To be able to use this phenomenon, I first built a TIRF optical setup with 2 laser sources (458
+              for the donor &amp; 633 nm for the acceptor). This set up does not use a prism to obtain the total
+              internal reflection, but a rotating mirror – Figure 1.2. TIRF illumination allows to limit the
+              excitation to the ventral part of cells, an advantage both in terms of preserving the studied cells
+              in general, and the stock of acceptors diffusing in the cell membrane in particular – Figure 1.3. It
+              has been extensively characterized to evaluate the laser irradiance; to calibrate the correspondence
+              between the angle θ<sub>c</sub> with the sample and the angle α<sub>c</sub> of the rotating mirror;
+              and to select the detection channels adapted for NEF imaging – Figure 1.4.
+            </p>
+          </div>
+          <div class="entry__media">
+            <figure>
+              <video controls preload="none" poster="img/phd/poster-jablonski.jpg" width="360" height="270">
+                <source src="img/phd/Jablonski-FRET-Anim-ENG.mp4" type="video/mp4" />
+              </video>
+              <figcaption>Figure 1.1: General illustration of FRET phenomena.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <div class="figpanel">
+          <figure>
+            <img src="img/phd/Optical-Schematic-ZoomPRT-ENG.png" loading="lazy" alt="TIRF optical setup schematic, focus on sample illumination" />
+            <figcaption>Figure 1.2: TIRF optical setup. Focus on the sample illumination.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/phd/Epifluo2TIRF-TIRF-ENG.png" loading="lazy" alt="Evanescent field when the incidence angle exceeds the critical angle" />
+            <figcaption>Figure 1.3: Evanescent field when θ &gt; θ<sub>c</sub>.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/phd/Spectras-Filters-ENG.png" loading="lazy" alt="Spectral characterization of filters for imaging" />
+            <figcaption>Figure 1.4: Spectral characterization of filters for imaging.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <article class="entry entry--media entry--flip entry--figwide">
+          <div class="entry__body">
+            <h3 id="phd-2">2 · Synthesis and characterization of quantum dots</h3>
+            <p>
+              I learnt how to synthesize QDs using the "Cao" method for the cores (CdSe) and the SILAR approach
+              to obtain thick mixed shells (/CdS/CdZnS/ZnS). QDs are semiconductor nanocrystals which have 2 main
+              interesting properties to note here. Firstly, their emission spectrum is primarily a function of
+              their size – Figure 2.1. Secondly, their absorption and emission spectra are asymmetrical – Figure
+              2.2 – which is particularly interesting in the context of FRET: using a laser excitation as far as
+              possible of the acceptor absorption spectrum minimizes direct excitation (better signal-to-noise
+              ratio) and maximizes donor excitation.
+            </p>
+            <p>
+              To adjust the adsorption of QDs onto glass surfaces, various ligands exchanges have been used. These
+              QDs have been characterized spectrally in colloidal solutions and after their adsorption onto glass
+              surfaces, which allowed me to affirm that the QDs ligands in solution have no influence on the
+              spectral emission properties once the QDs are functionalized onto the glass substrates. In solution,
+              I've also done measurements of emission lifetimes and evaluations of the Quantum Yield – Figures 2.4
+              and 2.5. The QY estimation of the cores φ<sub>c</sub> doesn't rely on the comparison with a known
+              emitter or an integration sphere: it is based on the spectral data and knowledge of the theoretical
+              models of the electronic fine structure of the nanocrystals – Figure 2.3.
+            </p>
+          </div>
+          <div class="entry__media">
+            <figure>
+              <img src="img/phd/QDs-RsizeEffect-ENG.png" loading="lazy" style="max-width:400px" alt="Illustration of the size-dependent emission properties of quantum dots" />
+              <figcaption>Figure 2.1: Illustration of the size-dependent emission properties of QDs.</figcaption>
+            </figure>
+            <figure>
+              <img src="img/phd/FRET-J-OverlapIntegal-ENG.png" loading="lazy" style="max-width:400px" alt="Spectral interest of having quantum dots as FRET donors" />
+              <figcaption>Figure 2.2: Spectral interest of having QDs as FRET donors.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <div class="figpanel">
+          <figure>
+            <img src="img/phd/QDs-Kr-Cores-ENG.png" loading="lazy" alt="Radiative rate calculations for QD cores" />
+            <figcaption>Figure 2.3: Radiative rate calculations.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/phd/QDs-Lifetime-Cores-ENG.png" loading="lazy" alt="Photoluminescence lifetime measurements" />
+            <figcaption>Figure 2.4: PL lifetime measurements.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/phd/QDs-QY-InSolution-ENG.png" loading="lazy" alt="Quantum yield estimations in solution" />
+            <figcaption>Figure 2.5: Quantum Yield estimations.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap">
+        <article class="entry entry--media entry--figwide">
+          <div class="entry__body">
+            <h3 id="phd-3">3 · Functionalization and micropatterning of QD monolayers</h3>
+            <p>
+              The protocol for functionalization of glass substrates has been initiated during the PhD of L.
+              Riachy. This protocol has been enriched by taking advantage of my know-how in terms of ligand
+              exchange, and I have carried out a thorough characterization of the obtained surfaces. The obtained
+              QDs monolayers can reach high surface densities - more than 3000 QDs/µm<sup>2</sup> - which is
+              essential to adapt the laser irradiance or the acquisition time in the context of NEF imaging –
+              Figure 3.1.
+            </p>
+            <p>
+              As the quantum dots are covalently bonded to the glass surface via silanes, the functionalization
+              proves to be very strong (resisting ultrasonic treatment for example), which allowed us to show the
+              relevance of combining this bottom-up approach with a top-down pre-microstructuration by UV
+              photolithography – Figure 3.2. This method uses the photo-sensitive resin S1813 G2 and hijacks
+              Alvéole's PRIMO device, designed for cell and hydrogel micropatterning, which relies on the use of a
+              digital micromirror device (DMD). The latter allows for easily adaptable and scalable maskless
+              photolithography, where patterns designed on software like Inkscape are projected directly onto the
+              substrate. With a x10 objective, a surface of 4,6×1,72 mm<sup>2</sup> can be illuminated without loss
+              of focus in a matter of just several seconds, with total liberty in the design of the patterns –
+              Figure 3.3. The resulting QDs micropatterns were of course characterized, and the maximum resolution
+              was established as ∼2 µm – Figure 3.4.
+            </p>
+          </div>
+          <div class="entry__media">
+            <figure>
+              <img src="img/phd/PL-QDsDensity.png" loading="lazy" style="max-width:300px" alt="Relation between QD monolayer photoluminescence and QD surface density" />
+              <figcaption>Figure 3.1: Relation between QDs monolayer photoluminescence &amp; QDs surface density of the monolayer.</figcaption>
+            </figure>
+            <figure>
+              <img src="img/phd/QDsMicropatterningProtocol.png" loading="lazy" alt="Protocol for QD micropatterning" />
+              <figcaption>Figure 3.2: Protocol for QDs micropatterning.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <div class="figpanel">
+          <figure>
+            <img src="img/phd/MicropatternsVariations.png" loading="lazy" alt="SEM image of a QD monolayer and various QD micropatterns" />
+            <figcaption>Figure 3.3: (a) SEM image of a QDs monolayer; (b–h) QDs micropatterns.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/phd/MicropatternsRes.png" loading="lazy" alt="Resolution of QD micropatterns with the x10 PRIMO objective" />
+            <figcaption>Figure 3.4: Resolution of QDs micropatterns with x10 PRIMO.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <article class="entry entry--media entry--flip">
+          <div class="entry__body">
+            <h3 id="phd-4">4 · Biofunctionalization and FRET demonstration</h3>
+            <p>
+              To biofunctionalize our QDs micropatterns, we chose imidazole as an anchoring function, through the
+              use of histidines or more directly of imidazole rings, thus allowing a specific and stable attachment
+              to the zinc surface of the quantum dots via the formation of a coordination complex – Figure 4.1.
+              This approach has in fact already been employed for QDs in colloidal solution and even for the
+              immobilization of gold NPs or QDs onto surfaces. The Im-AF647 ligand was used as a test platform
+              to demonstrate the feasibility of conducting a NEF imaging study. The initial experiments, performed
+              in solution, provided data to aid in the development and interpretation of the demonstration
+              experiment on microstructured QDs surfaces – Figure 4.2.
+            </p>
+            <p>
+              The different configurations with and without FRET acceptor were characterized spectrally and by
+              imaging, which allowed me to expose the relevance of the previously mentioned TIRF optical setup. By
+              accurately determining the background noise from the spectral spillover signal from the QDs into the
+              acceptor detection window, and from the direct excitation of the acceptor at 458 nm, I demonstrated
+              that the spectral selection ([672-696] nm) and preferred irradiance regime (0,9 W/cm<sup>2</sup> @
+              458 nm) allow for the recording of images with 99% of the signal coming from FRET – Figure 4.3. Using
+              a variety of methods to determine acceptor/donor ratios and FRET efficiency, we found close proximity
+              in the different results obtained.
+            </p>
+            <p>
+              Finally, emission of the Im-AF647 ligand allowed us to characterize a method for passivating the
+              glass surface of our substrates in order to optimize the specificity of adsorption of our ligands
+              chelating to quantum dots. This element was necessary to be able to perform cellular micropatterning
+              via micropatterns of QDs[His-RGD].
+            </p>
+          </div>
+          <div class="entry__media">
+            <figure>
+              <img src="img/phd/ChelationLigands-Illustration-ENG.png" loading="lazy" style="max-width:240px" alt="Functional illustration of the chelating ligands" />
+              <figcaption>Figure 4.1: Functional illustration of the chelating ligands.</figcaption>
+            </figure>
+            <figure>
+              <img src="img/phd/FRET-w-ImAF647.png" loading="lazy" style="max-width:420px" alt="TIRF images of QD micropatterns with and without the Im-AF647 ligand" />
+              <figcaption>Figure 4.2: TIRF images of QDs micropatterns with and without Im-AF647 ligand. Scale bar: 10 µm.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <figure>
+          <img src="img/phd/FRET-in-Solution.png" loading="lazy" alt="Spectral signal of QDs[MPA] and Im-AF647 in solution" />
+          <figcaption>
+            Figure 4.3: Spectral signal of QDs[MPA] and Im-AF647 in solution. (a) Signal at 458 nm excitation.
+            (b) Signal at 633 nm excitation. Insert: spectral integral of the signal to demonstrate the linear
+            increase in the presence of acceptors. (c) Spectral Integrals of traces showed in (a). FRET signal
+            evolution fitted by a saturation curve (Langmuir type) to obtain the affinity constants between our
+            QDs and the Im-AF647 ligand.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap">
+        <article class="entry entry--media">
+          <div class="entry__body">
+            <h3 id="phd-5">5 · NEF imaging on living cells &amp; super-resolution</h3>
+            <p>
+              I had the opportunity to test NEF imaging in "real-world" cell imaging situations. The surface ligand
+              His-RGD, introduced just before, was able to be effectively used to promote specific cell adhesion on
+              our QDs microstructures – Figure 5.1. This was an opportunity to show the importance of the design of
+              the micropatterns, as the U87-EGFR-WT cells used showed difficulties in spreading well, compared to
+              what we had observed on homogeneous surfaces.
+            </p>
+            <p>
+              This is not the only difficulty: the choice of a monolayer of QDs without an immobilization matrix –
+              acting as a protective layer – proved to be double-edged. While this effectively allows direct
+              bioconjugation of our FRET donors (QDs), it also leaves them exposed to unwanted adsorption
+              phenomena. Our first choice of cell labeling, employing an aptamer conjugated to a FRET acceptor
+              (Alexa Fluor 647), thus highlighted this limitation. One way to circumvent these problems would be to
+              employ upstream labeling, as I was able to demonstrate with RPE-1 and WPMY-1 cells, DiD-labeled prior
+              to incubation on our 2D microstructured surfaces – Figure 5.2.
+            </p>
+            <p>
+              Finally, I obtained encouraging preliminary results on the potential of combining NEF imaging with
+              super-resolution methods based on computation processing of emission fluctuations (SRRF), allowing us
+              to consider future more advanced studies on the localization and dynamics of adhesion focal points –
+              Figure 5.3 to 5.7.
+            </p>
+          </div>
+          <div class="entry__media">
+            <figure>
+              <video controls preload="none" poster="img/phd/poster-cells.jpg" width="540" height="280" style="width:100%;display:block">
+                <source src="img/phd/Cells-micropatterning-land.mp4" type="video/mp4" />
+              </video>
+              <figcaption>Figure 5.1: Demonstration of cell micropatterning on QDs.</figcaption>
+            </figure>
+            <figure>
+              <img src="img/phd/FRET-on-Cells.png" loading="lazy" alt="Demonstration of FRET on RPE-1 living cells" />
+              <figcaption>Figure 5.2: Demonstration of FRET on RPE-1 living cells. Scale bar: 10 µm.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <div class="figpanel">
+          <figure>
+            <video controls preload="none" poster="img/phd/poster-fluct.png" width="160" height="160">
+              <source src="img/phd/FRET-Fluctuations.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Figure 5.3: Fluctuations of FRET signal. Scale bar: 2 µm.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/phd/SRRF-AVG-IDA.png" loading="lazy" alt="Classical average of 25 images" />
+            <figcaption>Figure 5.4: Classical average of 25 images.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/phd/SRRF-IDA1000.png" loading="lazy" alt="Image reconstructed by the SRRF algorithm from 1000 images" />
+            <figcaption>Figure 5.5: Image by SRRF algorithm (1000 img).</figcaption>
+          </figure>
+          <figure>
+            <img src="img/phd/SRRF-IDA500.png" loading="lazy" alt="Image reconstructed by the SRRF algorithm from 500 images" />
+            <figcaption>Figure 5.6: Image by SRRF algorithm (500 img).</figcaption>
+          </figure>
+          <figure>
+            <img src="img/phd/SRRF-IDA100.png" loading="lazy" alt="Image reconstructed by the SRRF algorithm from 100 images" />
+            <figcaption>Figure 5.7: Image by SRRF algorithm (100 img).</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <article class="entry">
+          <div class="entry__body">
+            <h3>6 · Comparative life-cycle assessment</h3>
+            <p>
+              Finally, as I was able to test various alternatives of realization for the various steps of the QDs
+              micropatterning process developed during my PhD, I launched a comparative life-cycle analysis of them
+              to rigorously evaluate the ecological gains of these various adaptations of the protocol. This is
+              partly beyond the scope of my PhD, and is currently underway.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap">
+        <article class="entry entry--media">
+          <div class="entry__body">
+            <h3>Project Funding</h3>
+            <p>
+              This PhD project was at the intersection of the nanosciences, biophysics, and optics fields. It was
+              funded under the name SpaceInt by
+              <a href="https://www.aube.fr/" target="_blank" rel="noopener noreferrer">Aube Departmental Council (CD10)</a>
+              and
+              <a href="https://ec.europa.eu/regional_policy/en/funding/erdf/" target="_blank" rel="noopener noreferrer">European Regional Development Fund (ERDF)</a>
+              for the 2019-2022 time period.
+            </p>
+          </div>
+          <div class="entry__media logo-strip">
+            <img src="img/phd/spaceintfunds.png" loading="lazy" alt="Logos of the SpaceInt project funders" />
+          </div>
+        </article>
+
+        <article class="entry entry--media entry--flip">
+          <div class="entry__body">
+            <h3>Partners</h3>
+            <p>
+              It was hosted at
+              <a href="https://www.utt.fr/" target="_blank" rel="noopener noreferrer">University of Technology of Troyes (UTT)</a>
+              under the supervision of
+              <a href="https://www.scopus.com/authid/detail.uri?authorId=6504297523" target="_blank" rel="noopener noreferrer">Assistant Professor Cyrille Vézy</a>
+              and
+              <a href="https://www.scopus.com/authid/detail.uri?authorId=12799791000" target="_blank" rel="noopener noreferrer">Associate Professor Rodolphe Jaffiol</a>,
+              in the
+              <a href="https://recherche.utt.fr/light-nanomaterials-nanotechnologies-l2nL2n" target="_blank" rel="noopener noreferrer">L2n</a>
+              (Light, Nanomaterials, Nanotechnology) laboratory.
+            </p>
+            <p>
+              It involved a collaboration between L2n and the
+              <a href="https://www.lpem.espci.fr/spip.php?rubrique4" target="_blank" rel="noopener noreferrer">Laboratory of Physics and Material Science (LPEM)</a>
+              of the <i>École supérieure de physique et chimie industrielle de la ville de Paris</i> (ESPCI Paris),
+              and the
+              <a href="http://www-lbp.unistra.fr/" target="_blank" rel="noopener noreferrer">Laboratory of Bio-imaging and Pathologies (LBP)</a>
+              of the University of Strasbourg.
+            </p>
+          </div>
+          <div class="entry__media logo-strip">
+            <img src="img/phd/spaceintcollab.png" loading="lazy" alt="Logos of the project partner institutions" />
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2>Site map</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="phd.html">PhD Thesis</a></li>
+          <li><a href="academic.html">Academic</a></li>
+          <li><a href="associative.html">Associative</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="legal.html">Legal notice</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul class="social">
+          <li>
+            <a href="mailto:paul.robineau@proton.me">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5h19A1.5 1.5 0 0 1 23 6.5v11A1.5 1.5 0 0 1 21.5 19h-19A1.5 1.5 0 0 1 1 17.5v-11A1.5 1.5 0 0 1 2.5 5Zm.9 2 8.1 5.4a1 1 0 0 0 1.1 0L20.6 7H3.4Z"/></svg>
+              Send an email
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/paulrobineau/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05A4.2 4.2 0 0 1 16.6 9C20 9 21 11.2 21 14.5V21h-4v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21H9V9Z"/></svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.researchgate.net/profile/Paul_Robineau" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 3H4.4A1.4 1.4 0 0 0 3 4.4v15.2A1.4 1.4 0 0 0 4.4 21h15.2a1.4 1.4 0 0 0 1.4-1.4V4.4A1.4 1.4 0 0 0 19.6 3ZM9.6 16.3H7.9v-5.4c0-.6 0-1 .1-1.3h1.5l.1.9c.4-.7 1-.9 1.7-.9.2 0 .4 0 .6.1v1.6a2 2 0 0 0-.7-.1c-.8 0-1.4.5-1.5 1.3a3 3 0 0 0 0 .5v3.3Zm6.8.1c-.8 0-1.4-.3-1.8-1l-.6 1h-1V6.6h1.7v3.6c.4-.5 1-.8 1.7-.8 1.6 0 2.7 1.3 2.7 3.4 0 2.4-1.3 3.6-2.7 3.6Z"/></svg>
+              ResearchGate
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>About this site</h2>
+        <ul>
+          <li><a href="legal.html">Legal notice</a></li>
+          <li><a href="https://github.com/Paul-Robineau/paul-robineau.github.io" target="_blank" rel="noopener noreferrer">Source code</a></li>
+        </ul>
+        <p class="footer-note">
+          Static site: no tracking, no third-party requests, no advertising or analytics cookies. The only
+          script is a first-party light/dark theme switch that stores your choice locally. The full
+          <a href="https://github.com/Paul-Robineau/paul-robineau.github.io" target="_blank" rel="noopener noreferrer">source is on GitHub</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

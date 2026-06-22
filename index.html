@@ -1,242 +1,242 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <title>Paul Robineau</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="Nicolas Burger" />
-  <meta name="copyright" content="© Nicolas Burger | 2019" />
-  <!-- <link rel="canonical" href="https://paulrobineau.fr" /> -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; base-uri 'self'; form-action 'none'" />
 
-  <!-- Facebook and Twitter integration -->
-  <!-- <meta property="og:title" content="Paul Robineau" /> -->
-  <!-- <meta property="og:type" content="website" /> -->
-  <!-- <meta property="og:image" content="./img/hitchhiking.jpg" /> -->
-  <!-- <meta property="og:url" content="https://paulrobineau.fr" /> -->
-  <!-- <meta property="og:site_name" content="Paul Robineau" /> -->
-  <!-- <meta property="og:description" -->
-	<!-- content="Portfolio of Paul Robineau, PhD student in Nanobiophotonics" /> -->
-  <!-- <meta name="twitter:site" content="@paulrobineau" /> -->
-  <!-- <meta name="twitter:title" content="Paul Robineau" /> -->
-  <!-- <meta name="twitter:image" content="./img/hitchhiking.jpg" /> -->
-  <!-- <meta name="twitter:url" content="https://paulrobineau.fr/" /> -->
-  <!-- <meta name="twitter:card" -->
-	<!-- content="Portfolio of Paul Robineau, PhD student in Nanobiophotonics" /> -->
+  <title>Paul Robineau | Nanoscience, Sustainability &amp; Participative Action Research</title>
+  <meta name="description"
+    content="Paul Robineau – researcher across nanoscience, sustainability (Life-Cycle Assessment) and participative action research. Portfolio of research, teaching, and associative work." />
+  <meta name="author" content="Paul Robineau" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/main.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Paul Robineau | Nanoscience, Sustainability &amp; Participative Action Research" />
+  <meta property="og:description"
+    content="Researcher across nanoscience, sustainability (Life-Cycle Assessment) and participative action research." />
+  <meta property="og:image" content="https://paul-robineau.github.io/img/home/PR-photo.png" />
 
-  <!-- FICHIERS -->
-  <link rel="icon" type="image/png" sizes="32x32" href="img/pr.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/pr.png">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2f5277" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f161d" />
 
-  <!-- CDN  -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./js/language.js"></script>
+  <link rel="icon" href="img/common/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="img/common/pr.png" sizes="any" type="image/png" />
+  <link rel="apple-touch-icon" href="img/common/apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="theme.js"></script>
 </head>
 
 <body>
-  <nav class="top-bar">
-    <span class="logo font-w-700"><a href="index.html">Paul Robineau</a></span>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="nav-container">
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li class="font-w-700">
-          <a href="web/pro.html" id="intl-nav-industrial">PhD Thesis</a>
-        </li>
-        <li class="font-w-700">
-          <a href="web/academic.html" id="intl-nav-academic">Academic</a>
-        </li>
-        <li class="font-w-700">
-          <a href="web/association.html" id="intl-nav-asso">Associative</a>
-        </li>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="index.html">Paul Robineau</a>
+      <ul class="nav__links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="phd.html">PhD Thesis</a></li>
+        <li><a href="academic.html">Academic</a></li>
+        <li><a href="associative.html">Associative</a></li>
+        <li><a href="blog/">Blog</a></li>
       </ul>
-    </div>
-  </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" hidden aria-label="Switch colour theme">
+          <svg class="ti ti--auto" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 0 0 18Z"/></svg>
+          <svg class="ti ti--light" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM4 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2h1Zm17 0a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1ZM5.64 5.64a1 1 0 0 1 1.42 0l.7.71A1 1 0 0 1 6.34 7.76l-.7-.7a1 1 0 0 1 0-1.42Zm10.6 10.6a1 1 0 0 1 1.42 0l.7.7a1 1 0 0 1-1.42 1.42l-.7-.71a1 1 0 0 1 0-1.41ZM18.36 5.64a1 1 0 0 1 0 1.42l-.7.7a1 1 0 1 1-1.42-1.42l.7-.7a1 1 0 0 1 1.42 0ZM7.76 16.24a1 1 0 0 1 0 1.42l-.71.7a1 1 0 0 1-1.41-1.42l.7-.7a1 1 0 0 1 1.42 0Z"/></svg>
+          <svg class="ti ti--dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.5A9 9 0 0 1 9.5 3 9 9 0 1 0 21 14.5Z"/></svg>
+        </button>
+    </nav>
+  </header>
 
-  <div class="main-container-index">
-    <section class="resume">
-      <a href="./doc/CV-PR-2025-ENG.pdf" id="intl-resume" download><i class="fas fa-download"></i> <span
-          id="intl-index-resume">Resume</span></a>
-    </section>
-    <section class="categories">
-      <ul>
-        
-		    <li>
-          <h2><i class="fab fa-react"></i> <span id="intl-index-securityExpert-title">Nanos & Environment Researcher</span></h2>
-          <div>
-			<br />
-            <p id="intl-index-securityExpert-desc1">
-              A master in 
-			<a target='blank' href='https://www.utt.fr/formations/master/optique-et-nanotechnologies'>Optics and Nanotechnology</a> 
-			allowed me to have a general overview on Nanosciences, 
-			  from theorethical frameworks to current state of applications in different areas. 
-			  Following this by a PhD in the area of <a target='blank' href='https://www.theses.fr/2022TROY0039'>Nanobiophotonics</a> let me develop specific competencies at the 
-			  interface of Nanosciences, Biology, and Optics.
+  <main id="main">
+    <section class="wrap hero">
+      <div class="hero__intro">
+        <p class="eyebrow">Nanoscience · Sustainability · Participative action research</p>
+        <h1>Paul Robineau</h1>
+        <p class="lead">
+          Researcher working across nanoscience, sustainability, and participative action
+          research – currently a postdoctoral researcher applying Life-Cycle Assessment to
+          emerging technologies, while building collective, deliberative ways of connecting
+          science and society.
         </p>
-       <br /> 
-          <p id="intl-index-securityExpert-desc2">
-          I then worked as postdoctoral researcher at the <a target='blank' href='https://iphc.cnrs.fr/en/home/'>Hubert Curien Pluridisciplinary Institute (IPHC)</a>, in the context of <a target='blank' href='https://co2inno.com/'>CO2-InnO Interreg European project<a/>. Goal : conducting prospective Life-Cycle Assessment (LCA) studies regarding the Fessenheim NPP decommissioning, the recycling of VLL (very low-level) radioactive metals, and a micro-CHP demonstrator coupled to H2 production through electrolysis. 
-			 </p>
-			 <br />
-			  <p id="intl-index-securityExpert-desc1">
-          Currently working as postdoctoral researcher at the <a target='blank' href='https://lasir.cnrs.fr/'>Laboratoire de Spectroscopie pour les Interactions, la Réactivité et l'Environnement (LASIRE)</a>, in the context of <a target='blank' href='https://www.cnrs.fr/en/our-research/france-2030/ri2-calcadn'>CNRS CalcADN project<a/>. Goal : conducting prospective Life-Cycle Assessment (LCA) study regarding emerging DNA computing technology, mixing for the first time my experience in both nanobiosciences and sustainability. 
-			 </p>
-			 <br />
-			 <p id="intl-index-securityExpert-desc3">
-			My interest in Social Sciences and Humanities led me to gain knowledge 
-			  on the varied considerations on the intertwined relations between the research field and the civil, industrial, and political ones. I am currently co-organizing the <a target='blank' href='https://conventions.iesf.fr/convention-connaissances/home'>IESF 2025 Scientific Convention</a> dedicated to these subjects, and defending a research program aiming at a synergy between the fields of sustainability and nanosciences.
-            </p>
-          </div>
-        </li>
-        <br />
-        <li>
-          <h2><i class="fas fa-flask"></i> <span id="intl-index-RandD-title">R&D Engineer</span></h2>
-          <div>
-      <br />
-            <p id="intl-index-RandD-desc1">
-              My engineer degree in 
-      <a target='blank' href='https://www.utt.fr/formations/diplome-d-ingenieur/materiaux-technologie-et-economie'>Materials: Technology & Economy</a> from the
-        <a target='blank' href='https://www.utt.fr/'>University of Technology of Troyes (UTT)</a>
-              allowed me to work in R&D during 2 Internships and pursue a PhD Thesis. 
-        My first professionnal experiences, in Industrial Research at 
-      <a target='blank' href='http://www.cea-tech.fr/cea-tech/english/'>CEA Tech</a>, 
-      gave me the skills to be autonomous on many areas and to direct my research with 
-      the short and long term technical feasability always in mind.
-            </p>
-            <br />
-            <p id="intl-index-RandD-desc2">
-              From theorethical knowledge of Structural properties of Matter and Light-Matter interactions, 
-        to practical skills in Life-Cycle Assessment and Eco-conception, Materials for Energy or for 
-        Optoelectronics, adding proficient use of varied software tools (Microsoft Office, Matlab, Igor Pro, 
-        Bash, Adobe Creative Suite), and critical insights from Sociology of Organizations, History & 
-        Philosphy of Sciences, I have the profile of a reflexive engineer with systemic 
-        and interdisciplinary mindset.
-            </p>
-          </div>
-        </li>
-        <br />
-        <li>
-          <h2><i class="fas fa-chart-area"></i> <span id="intl-index-Ecoteaching-title">Physics & Ecology of Materials Teacher</span></h2>
-          <div>
-			<br />
-            <p id="intl-index-Ecoteaching-desc1">
-              Beside my research activities, I had the pleasure to oversee pratical works 
-			  in physics & chemistry as a teacher assistant in 2020-2021 at the 
-			  <a target='blank' href='https://www.utt.fr/'>University of Technology of Troyes (UTT)</a>.
-			</p>
-			<br />
-			<p id="intl-index-Ecoteaching-desc2">
-			  I also designed and was responsible to teach a section on abiotic resources inside a general course on modeling Human-Systems-Nature interactions. We studied it from A to Z, looking at current consumption & production, 
-			  and their future – using for that a sociotechnical perspective informed by social & environmental sciences.
-        <a href="./doc/PR-abiotic-ressources-slides-2020.pdf">Slides available here</a>. 
-        I also helped students adopt a systemic approach to their modeling with an introduction to its conceptual basis and methodology.
-        <a href="./doc/PR-LG-Generalities-on-Modeling-Beginning-the-Project-v2-2020.pdf">Slides available here</a>
-            </p>
-          </div>
-        </li>
-        <br />
-        <li>
-          <h2><i class="fas fa-user-friends"></i> <span id="intl-index-projectManager-title">Project Manager</span></h2>
-          <div>
-			<br />
-            <p id="intl-index-projectManager-desc1">
-              There is very few research that does not need collaboration and work organization. 
-			  From group projects during courses at the university, to associative
-              events or first-aid service, my skills in project & team organization have been developped in 
-			  varied contexts.
-            </p>
-            <br />
-            <p id="intl-index-projectManager-desc2">
-              These experiences gave me the opportunity to create & conduct planning, 
-			  to work with and sometimes manage teams from 3 to 15 people. 
-			  On the software side, I use daily several tools like Slack/Discord/Miro, GitHub, or Trello.
-            </p>
-          </div>
-        </li>
-        <br />
-        <li>
-          <h2><i class="fas fa-theater-masks"></i> <span id="intl-index-traveler-title">Arts Enthousiast</span></h2>
-          <div>
-			<br />
-            <p id="intl-index-traveler-desc1">
-              The collective effort of putting together art is one of my greatest pleasures. 
-			  Whatever we are talking, acting, directing, or writing, it is something I'm not sure I can ever let go.
-            </p>
-            <br />
-            <p id="intl-index-traveler-desc2">
-              During my university's years, I wrote, directed and edited a short film with friends and involved myself in the 
-			  <a target='blank' href='https://etu.utt.fr/orgas/theatre'>Ch'UTT de vers</a> association for 4 plays as an actor (of which 1 as co-writer) and 2 as director. I have then been involved in the <a target='blank' href='https://www.compagnie-grande.org/'>theatre compagny Grande</a> as performer. I've also co-written/directed/produced a spatialized audio fiction, in the context of the newly created B329 compagny, which will start diffusing in 2026. 
-            </p>
-          </div>
-        </li>
-      </ul>
+        <a class="btn" href="doc/CV-PR-2025-ENG.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42l2.3 2.3V4a1 1 0 0 1 1-1Zm-7 14a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
+          Download résumé (PDF)
+        </a>
+      </div>
+      <div class="hero__photo">
+        <img src="img/home/PR-photo.png" width="320" height="320" alt="Portrait of Paul Robineau" />
+      </div>
     </section>
-  </div>
 
-   <footer class="main-footer">
-    <div class="language">
-	<h4 id="intl-footer-siteMap">Language</h4>
-	<h4 id="intl-footer-siteMap">(FR not available yet)</h4>
-      <ul>
-        <li>
-          <img alt="fr-FR" class="flag" src="img/flags/fr.svg" onclick="chooseLanguage('fr-FR', true)" />
-        </li>
-        <li>
-          <img alt="en-GB" class="flag" src="img/flags/gb.svg" onclick="chooseLanguage('en-GB')" />
-        </li>
-      </ul>
-      <p>Adapted from Nicolas Burger (burgerni10) with his consent</p>
-    </div>
-    <div class="footer-nav">
-      <h4 id="intl-footer-siteMap">Site map</h4>
-      <ul>
-        <li><a href="index.html" id="intl-footer-home">Home</a></li>
-        <li>
-          <a href="web/pro.html" id="intl-footer-industrial">PhD Thesis</a>
-        </li>
-        <li>
-          <a href="web/academic.html" id="intl-footer-academic">Academic</a>
-        </li>
-        <li>
-          <a href="web/association.html" id="intl-intl-footer-asso">Associative</a>
-        </li>
-        <li>
-          <a href="web/legals.html" id="intl-footer-legals">Legals</a>
-        </li>
-      </ul>
-    </div>
-    <div class="contact">
-	<h4 id="intl-footer-siteMap">Contact</h4>
-      <ul>
-        <li>
-          <a href="mailto:paul.robineau@proton.me" title="paul.robineau@proton.me"><i class="fas fa-paper-plane"
-              style="width:20px"> </i><span id="intl-footer-sendEmail">Send an email</span>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.linkedin.com/in/paulrobineau/">
-            <i class="fab fa-linkedin" style="width:20px"> </i>LinkedIn
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.researchgate.net/profile/Paul_Robineau"><i class="fab fa-researchgate"
-              style="width:20px"> </i>ResearchGate
-          </a>
-        </li>
-      </ul>
+    <section class="section section--alt">
+      <div class="wrap">
+        <h2>What I do</h2>
+        <p class="section-intro">
+          My work spans several connected roles, all sharing a systemic, interdisciplinary mindset.
+        </p>
+        <div class="cards">
+
+          <article class="card">
+            <h3>Nanoscience &amp; Environment Researcher</h3>
+            <p>
+              A master in
+              <a href="https://www.utt.fr/formations/master/optique-et-nanotechnologies" target="_blank" rel="noopener noreferrer">Optics and Nanotechnology</a>
+              gave me a broad overview of nanoscience, from theoretical frameworks to applications.
+              A PhD in
+              <a href="https://www.theses.fr/2022TROY0039" target="_blank" rel="noopener noreferrer">Nanobiophotonics</a>
+              then let me build expertise at the interface of nanoscience, biology, and optics.
+            </p>
+            <p>
+              As a postdoctoral researcher at the
+              <a href="https://iphc.cnrs.fr/en/home/" target="_blank" rel="noopener noreferrer">Hubert Curien Pluridisciplinary Institute (IPHC)</a>,
+              within the <a href="https://co2inno.com/" target="_blank" rel="noopener noreferrer">CO2-InnO</a> Interreg project, I conducted prospective
+              Life-Cycle Assessment (LCA) studies on the Fessenheim NPP decommissioning, the recycling
+              of very-low-level radioactive metals, and a micro-CHP demonstrator coupled to hydrogen
+              production through electrolysis.
+            </p>
+            <p>
+              I am now a postdoctoral researcher at
+              <a href="https://lasir.cnrs.fr/" target="_blank" rel="noopener noreferrer">LASIRE</a>,
+              within the <a href="https://www.cnrs.fr/en/our-research/france-2030/ri2-calcadn" target="_blank" rel="noopener noreferrer">CNRS CalcADN project</a>,
+              running a prospective LCA study of emerging DNA-computing technology – bringing together,
+              for the first time, my experience in both nanobiosciences and sustainability.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Participative Action Research</h3>
+            <p>
+              A growing part of my work is about how to design settings where researchers,
+              institutions, and citizens take part in producing and debating knowledge – and turning
+              that deliberation into action.
+            </p>
+            <p>
+              I co-organised the
+              <a href="https://conventions.iesf.fr/convention-connaissances/home" target="_blank" rel="noopener noreferrer">IESF 2025 Scientists Assembly</a>
+              on the relations between research and the civil, industrial, and political spheres,
+              bringing PhD holders and candidates from every scientific field together, to formulate recommendations on how to bring science and society closer.
+            </p>
+            <p>
+              Since the assembly's report, we run restitutions and workshops in varied settings –
+              research labs, public institutions, science-mediation associations, and political
+              parties – to open debate and work towards operationalizing the recommendations. In
+              parallel, we began reflexive scientific studies of the deliberative process itself.
+            </p>
+            <p>
+              This collective work builds on the project- and team-management experience I have
+              gathered across research, associative events, and first-aid services.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>R&amp;D Engineer</h3>
+            <p>
+              My engineering degree in
+              <a href="https://www.utt.fr/formations/diplome-d-ingenieur/materiaux-technologie-et-economie" target="_blank" rel="noopener noreferrer">Materials: Technology &amp; Economy</a>
+              from the
+              <a href="https://www.utt.fr/" target="_blank" rel="noopener noreferrer">University of Technology of Troyes (UTT)</a>
+              led to two R&amp;D internships and a PhD. My first experiences in industrial research at
+              <a href="https://www.cea.fr/english" target="_blank" rel="noopener noreferrer">CEA Tech</a>
+              taught me to work autonomously and to keep short- and long-term technical feasibility in mind.
+            </p>
+            <p>
+              From the structural properties of matter and light–matter interactions, to Life-Cycle
+              Assessment, eco-design and materials for energy and optoelectronics – plus fluent use of
+              varied software and insights from the sociology
+              of organisations and the history &amp; philosophy of science – I bring the profile of a
+              reflexive engineer with a systemic, interdisciplinary mindset.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Physics &amp; Ecology of Materials Teacher</h3>
+            <p>
+              Alongside research, I supervised practical work in physics &amp; chemistry as a teaching
+              assistant in 2020–2021 at the
+              <a href="https://www.utt.fr/" target="_blank" rel="noopener noreferrer">University of Technology of Troyes</a>.
+            </p>
+            <p>
+              I also designed and taught a section on abiotic resources within a general course on
+              modelling Human–Systems–Nature interactions, studying current production and consumption
+              and their futures through a sociotechnical lens.
+              (<a href="doc/PR-abiotic-ressources-slides-2020.pdf" target="_blank" rel="noopener noreferrer">resources slides</a>,
+              <a href="doc/PR-LG-Generalities-on-Modeling-Beginning-the-Project-v2-2020.pdf" target="_blank" rel="noopener noreferrer">modelling slides</a>).
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Arts Enthusiast</h3>
+            <p>
+              The collective effort of making art is one of my greatest pleasures – talking, acting,
+              directing, or writing.
+            </p>
+            <p>
+              During my university years I wrote, directed and edited a short film, and was involved in
+              the <a href="https://etu.utt.fr/orgas/theatre" target="_blank" rel="noopener noreferrer">Ch'UTT de vers</a>
+              company (four plays as actor, one as co-writer, two as director). I have since performed with
+              the <a href="https://www.compagnie-grande.org/" target="_blank" rel="noopener noreferrer">Compagnie Grande</a>,
+              and co-wrote, directed and produced a spatialised audio fiction with the new 
+              <a href="https://b329.org/" target="_blank" rel="noopener noreferrer">B329 company</a>, releasing in 2026.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2>Site map</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="phd.html">PhD Thesis</a></li>
+          <li><a href="academic.html">Academic</a></li>
+          <li><a href="associative.html">Associative</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="legal.html">Legal notice</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul class="social">
+          <li>
+            <a href="mailto:paul.robineau@proton.me">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5h19A1.5 1.5 0 0 1 23 6.5v11A1.5 1.5 0 0 1 21.5 19h-19A1.5 1.5 0 0 1 1 17.5v-11A1.5 1.5 0 0 1 2.5 5Zm.9 2 8.1 5.4a1 1 0 0 0 1.1 0L20.6 7H3.4Z"/></svg>
+              Send an email
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/paulrobineau/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05A4.2 4.2 0 0 1 16.6 9C20 9 21 11.2 21 14.5V21h-4v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21H9V9Z"/></svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.researchgate.net/profile/Paul_Robineau" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 3H4.4A1.4 1.4 0 0 0 3 4.4v15.2A1.4 1.4 0 0 0 4.4 21h15.2a1.4 1.4 0 0 0 1.4-1.4V4.4A1.4 1.4 0 0 0 19.6 3ZM9.6 16.3H7.9v-5.4c0-.6 0-1 .1-1.3h1.5l.1.9c.4-.7 1-.9 1.7-.9.2 0 .4 0 .6.1v1.6a2 2 0 0 0-.7-.1c-.8 0-1.4.5-1.5 1.3a3 3 0 0 0 0 .5v3.3Zm6.8.1c-.8 0-1.4-.3-1.8-1l-.6 1h-1V6.6h1.7v3.6c.4-.5 1-.8 1.7-.8 1.6 0 2.7 1.3 2.7 3.4 0 2.4-1.3 3.6-2.7 3.6Z"/></svg>
+              ResearchGate
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>About this site</h2>
+        <ul>
+          <li><a href="legal.html">Legal notice</a></li>
+          <li><a href="https://github.com/Paul-Robineau/paul-robineau.github.io" target="_blank" rel="noopener noreferrer">Source code</a></li>
+        </ul>
+        <p class="footer-note">
+          Static site: no tracking, no third-party requests, no advertising or analytics cookies. The only
+          script is a first-party light/dark theme switch that stores your choice locally. The full
+          <a href="https://github.com/Paul-Robineau/paul-robineau.github.io" target="_blank" rel="noopener noreferrer">source is on GitHub</a>.
+        </p>
+      </div>
     </div>
   </footer>
 </body>
-
 
 </html>

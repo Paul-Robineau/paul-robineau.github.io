@@ -1,0 +1,27 @@
+{
+  "_comment": "Curated 'Featured publications' cards. Each entry references a paper by DOI; build_publications.py uses that paper's citation live from HAL when the DOI is found there, otherwise it falls back to the inline 'citation' field (use this for papers not yet in HAL). Set 'image' to a file under img/academic/ (e.g. a graphical abstract), or null to show the card as text only. To feature a different paper, change the DOI / citation.",
+  "featured": [
+    {
+      "doi": "10.1021/acsanm.3c00778",
+      "image": "img/academic/GA-2023.png",
+      "alt": "Graphical abstract: micropatterning of quantum dots for biofunctionalization and nanoimaging"
+    },
+    {
+      "doi": "10.1016/j.scitotenv.2025.179200",
+      "image": "img/academic/GA-2025.png",
+      "alt": "Graphical abstract: radiological impact of the Fessenheim NPP decommissioning"
+    },
+    {
+      "doi": "10.1016/j.jclepro.2026.148170",
+      "image": "img/academic/GA-2026b.png",
+      "alt": "Graphical abstract: hydrogen ICE-CHP in decentralized energy systems (TEA-LCA)",
+      "citation": "Paul Robineau, Naqib Salim, Maria Boltoeva, Maurice Kettner, Nicolas Arbor, Gaetana Quaranta. Hydrogen internal combustion engine CHP in decentralized energy systems: Towards TEA-LCA in an open-source framework. <i>Journal of Cleaner Production</i>, 2026, 562, pp.148170. <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://doi.org/10.1016/j.jclepro.2026.148170\">⟨10.1016/j.jclepro.2026.148170⟩</a>."
+    },
+    {
+      "doi": "10.1038/s41534-026-01209-y",
+      "image": "img/academic/GA-2026a.webp",
+      "alt": "Graphical abstract: integration of a single-photon source with a fibre-compatible photonic waveguide",
+      "citation": "Aurélie Broussier, Muhammad H. Muhammad, Nancy Rahbany, Abdelhamid Hmima, Paul Robineau, Cyrille Vezy, Régis Déturche, Antoine Kevorkian, Sylvain Blaize, Christophe Couteau. Integration of a single photon source with a fibre-compatible photonic waveguide. <i>npj Quantum Information</i>, 2026, 12 (1), pp.67. <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://doi.org/10.1038/s41534-026-01209-y\">⟨10.1038/s41534-026-01209-y⟩</a>."
+    }
+  ]
+}

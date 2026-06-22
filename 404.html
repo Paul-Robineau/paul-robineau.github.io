@@ -1,117 +1,55 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <title>Paul Robineau</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="Nicolas Burger" />
-  <meta name="copyright" content="© Nicolas Burger | 2019" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/main.css" />
-
-  <!-- FICHIERS -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-
-  <!-- CDN  -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./js/language.js"></script>
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; base-uri 'self'; form-action 'none'" />
+  <title>Page not found | Paul Robineau</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2f5277" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f161d" />
+  <link rel="icon" href="img/common/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="img/common/pr.png" sizes="any" type="image/png" />
+  <link rel="apple-touch-icon" href="img/common/apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="theme.js"></script>
 </head>
 
 <body>
-  <nav class="top-bar">
-    <span class="logo font-w-700"><a href="index.html">Paul Robineau</a></span>
-
-    <div class="nav-container">
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li class="font-w-700">
-          <a href="web/pro.html" id="intl-nav-industrial">PhD Thesis</a>
-        </li>
-        <li class="font-w-700">
-          <a href="web/research.html" id="intl-nav-academic">Academic</a>
-        </li>
-
-        <li class="font-w-700">
-          <a href="web/association.html" id="intl-nav-asso">Associative</a>
-        </li>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="index.html">Paul Robineau</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="phd.html">PhD Thesis</a></li>
+        <li><a href="academic.html">Academic</a></li>
+        <li><a href="associative.html">Associative</a></li>
+        <li><a href="blog/">Blog</a></li>
       </ul>
-    </div>
-  </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" hidden aria-label="Switch colour theme">
+          <svg class="ti ti--auto" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 0 0 18Z"/></svg>
+          <svg class="ti ti--light" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM4 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2h1Zm17 0a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1ZM5.64 5.64a1 1 0 0 1 1.42 0l.7.71A1 1 0 0 1 6.34 7.76l-.7-.7a1 1 0 0 1 0-1.42Zm10.6 10.6a1 1 0 0 1 1.42 0l.7.7a1 1 0 0 1-1.42 1.42l-.7-.71a1 1 0 0 1 0-1.41ZM18.36 5.64a1 1 0 0 1 0 1.42l-.7.7a1 1 0 1 1-1.42-1.42l.7-.7a1 1 0 0 1 1.42 0ZM7.76 16.24a1 1 0 0 1 0 1.42l-.71.7a1 1 0 0 1-1.41-1.42l.7-.7a1 1 0 0 1 1.42 0Z"/></svg>
+          <svg class="ti ti--dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.5A9 9 0 0 1 9.5 3 9 9 0 1 0 21 14.5Z"/></svg>
+        </button>
+    </nav>
+  </header>
 
-  <div class="main-container-404">
-    <p id='intl-404-notFound'>Page not found.</p>
-    <p><a id='intl-404-goBackHome' href='/index.html'>Go back home</a></p>
-  </div>
+  <main id="main">
+    <section class="wrap section" style="text-align:center;">
+      <p class="eyebrow" style="color:var(--accent);font-weight:700;">Error 404</p>
+      <h1>Page not found</h1>
+      <p class="section-intro" style="margin-inline:auto;">
+        The page you are looking for doesn't exist or has moved.
+      </p>
+      <a class="btn" href="index.html">Back to home</a>
+    </section>
+  </main>
 
-  <footer class="main-footer">
-    <div class="language">
-	<h4 id="intl-footer-siteMap">Language</h4>
-	<h4 id="intl-footer-siteMap">(FR not available YET)</h4>
-      <ul>
-        <li>
-          <img alt="fr-FR" class="flag" src="img/flags/fr.svg" onclick="chooseLanguage('fr-FR', true)" />
-        </li>
-        <li>
-          <img alt="en-GB" class="flag" src="img/flags/gb.svg" onclick="chooseLanguage('en-GB')" />
-        </li>
-      </ul>
-      <p>Adapted from Nicolas Burger (burgerni10) with his consent</p>
-    </div>
-    <div class="footer-nav">
-      <h4 id="intl-footer-siteMap">Site map</h4>
-      <ul>
-        <li><a href="index.html" id="intl-footer-home">Home</a></li>
-        <li>
-          <a href="web/pro.html" id="intl-footer-industrial">PhD Thesis</a>
-        </li>
-        <li>
-          <a href="web/research.html" id="intl-footer-academic">Academic</a>
-        </li>
-        <li>
-          <a href="web/association.html" id="intl-intl-footer-asso">Associative</a>
-        </li>
-
-        <li>
-          <a href="web/legals.html" id="intl-footer-legals">Legals</a>
-        </li>
-      </ul>
-    </div>
-    <div class="contact">
-	<h4 id="intl-footer-siteMap">Contact</h4>
-      <ul>
-        <li>
-          <a href="mailto:paul.robineau@proton.me" title="paul.robineau@proton.me"><i class="fas fa-paper-plane"
-              style="width:20px"> </i><span id="intl-footer-sendEmail">Send an email</span>
-          </a>
-        </li>
-
-        <!-- <li> -->
-          <!-- <a target="_blank" href="https://twitter.com/burgerni10"><i class="fab fa-twitter" style="width:20px"> -->
-            <!-- </i>Twitter -->
-          <!-- </a> -->
-        <!-- </li> -->
-
-        <li>
-          <a target="_blank" href="https://www.linkedin.com/in/paulrobineau/">
-            <i class="fab fa-linkedin" style="width:20px"> </i>LinkedIn
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.researchgate.net/profile/Paul_Robineau"><i class="fab fa-researchgate"
-              style="width:20px"> </i>ResearchGate
-          </a>
-        </li>
-      </ul>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-note" style="margin-top:0;">© Paul Robineau – static site, no tracking.</p>
     </div>
   </footer>
 </body>
