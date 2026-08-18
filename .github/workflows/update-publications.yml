@@ -1,0 +1,53 @@
+name: Update publications
+
+on:
+  schedule:
+    # Weekly, Monday 05:17 UTC (off-the-hour to dodge GitHub's cron rush)
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'tools/build_publications.py'
+      - 'tools/manual_publications.json'
+      - 'tools/featured.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-publications
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Standard library only, so the runner's preinstalled python3 is enough.
+      - name: Regenerate academic.html
+        run: |
+          before=$(grep -c 'class="tag tag--' academic.html)
+          python3 tools/build_publications.py
+          after=$(grep -c 'class="tag tag--' academic.html)
+          echo "entries: $before -> $after"
+          # A shrinking list on an unattended run usually means a source (HAL,
+          # ORCID, Crossref) was down rather than a real removal. Fail instead
+          # of committing a truncated page; re-run by hand once it is back.
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$after" -lt "$before" ]; then
+            echo "::error::Entry count dropped ($before -> $after); refusing to commit."
+            exit 1
+          fi
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- academic.html; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add academic.html
+          git commit -m 'Update publications list (automated)'
+          git push

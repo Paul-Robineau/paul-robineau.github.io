@@ -33,7 +33,7 @@ theme.js           the only script (light/dark/auto theme toggle + post reading-
 img/  doc/         images, and the PDFs referenced by the pages
 tools/             publications generator and its data
 .github/workflows/ weekly publications refresh
-robots.txt  sitemap.xml  .nojekyll
+robots.txt  sitemap.xml
 ```
 
 ## Publications
